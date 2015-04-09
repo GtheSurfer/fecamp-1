@@ -10,13 +10,13 @@
 	<script src="js/day9.js"></script>
 </head>
 <body>
-	<h1>오늘 배울 내용</h1>
+	<h1 class = "draggable">오늘 배울 내용</h1>
 
 	<div id="box" style="width:50px;height:50px;top:10px;left:200px">
 		<span class="size-handle"></span>
 	</div>
 
-	<h2>jQuery 팁</h2>
+	<h2 class = "draggable" >jQuery 팁</h2>
 	<ol>
 		<li>API는 <a href="http://api.jquery.com">http://api.jquery.com</a>에서 찾으세요.</li>
 		<li>엘리먼트를 선택한 뒤에는 명령을 계속 이어서 작성할 수 있습니다. 이러한 기능을 가리켜 체이닝(chaining)이라고 부릅니다.
@@ -24,10 +24,10 @@
 		<li>엘리먼트를 선택한 jQuery 객체를 변수에 저장할 때 변수 이름 앞에 <code>$</code>를 붙여두면 식별하기 편리합니다.</li>
 	</ol>
 
-	<h2>이벤트 관련 함수</h2>
+	<h2 class = "draggable">이벤트 관련 함수</h2>
 	<p>jQuery에서 이벤트를 추가하거나 제거할 때는 <code>.on()</code> 또는 <code>.off()</code> 함수를 사용한다. 임의로 마치 사용자가 이벤트를 발생시킨 것처럼 이벤트를 실행할 때는 <code>.trigger()</code> 함수를 사용한다.</p>
 
-	<h2>애니메이션 관련 함수</h2>
+	<h2 class = "draggable">애니메이션 관련 함수</h2>
 	<ul>
 		<li><code>.show()/.hide()</code>: 대각선으로 펼쳐지며 나타나거나 접히며 사라진다. 시간을 뜻하는 인수가 없으면 <code>display</code> 속성을 <code>none</code> 또는 그 밖의 값으로 설정한다.</li>
 		<li><code>.fadeIn()/.fadeOut()/.fadeToggle()</code>: 페이드 인/아웃 효과</li>
