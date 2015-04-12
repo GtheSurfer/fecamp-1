@@ -60,15 +60,17 @@ jQuery(function($){
                 break;
         }
     });
-    
+
+//top버튼을 누르면 화면이 최상단으로 스크롤 되게
     $('.top').on('click', function (event){
         event.preventDefault();
         $('html,body').animate({scrollTop: 0}, 200);
     });
     
+//외부로 연결되는 하이퍼텍스트 옆에 아이콘을 붙이기
     $('a[href^="http:"]').append('<i class="fa fa-external-link"></i>').attr('target','_blank');
     
-    
+//탭을 구현
     $('#tab .tabs').on('click', 'li a', function (event){
         var $this = $(this);
         
